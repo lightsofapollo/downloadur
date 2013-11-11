@@ -6,14 +6,14 @@ Expriemental download accelerator via http byte range fetching.
 
 How its (probably) going to work:
 
-## State: detect
+### State: detect
   - detect if range is available if it is -> fast path || slow_path
   - detect if size is large enough (10mb?? no idea yet) if its big enough fast path || slow_path
   
-## State: Slow Path
+### State: Slow Path
   - http.get -> pipe to dest (one get)
 
-## State: Fast Path
+### State: Fast Path
 
 Terminology
   worker = single get request (readable stream)
